@@ -98,6 +98,7 @@ void SITL_State::_sitl_setup()
 #endif
         if (_use_fg_view) {
             fg_socket.connect(_fg_address, _fg_view_port);
+            // fg_socket.connect("172.25.48.1", 5503);
         }
 
         fprintf(stdout, "Using Irlock at port : %d\n", _irlock_port);

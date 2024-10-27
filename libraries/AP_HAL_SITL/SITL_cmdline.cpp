@@ -216,12 +216,12 @@ void SITL_State::_parse_command_line(int argc, char * const argv[])
     const char *vehicle_str = AP_BUILD_TARGET_NAME;
     _use_fg_view = false;
     char *autotest_dir = nullptr;
-    _fg_address = "127.0.0.1";
+    _fg_address = "172.25.48.1";     // MODIFY THE IP ADDRESS FOR THE PC RUNNING FLIGHTGEAR UDP HERE
     const char* config = "";
 
     const int BASE_PORT = 5760;
     const int RCIN_PORT = 5501;
-    const int FG_VIEW_PORT = 5503;
+    const int FG_VIEW_PORT = 5503;  // MODIFY FLIGHTGEAR UDP PORT HERE
     _base_port = BASE_PORT;
     _rcin_port = RCIN_PORT;
     _fg_view_port = FG_VIEW_PORT;

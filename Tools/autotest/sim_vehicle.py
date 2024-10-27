@@ -833,6 +833,7 @@ def start_vehicle(binary, opts, stuff, spawns=None):
             sys.exit(1)
 
         cmd.append("--start-time=%d" % start_time_UTC)
+        cmd.append("--enable-fgview")
 
     cmd.append("--sim-address=%s" % cmd_opts.sim_address)
 
